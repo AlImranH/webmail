@@ -1,0 +1,98 @@
+body{
+    font-size: 14px;
+    /*font-family: 'Open Sans', sans-serif, Arial, Helvetica;*/
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.w-10{
+    width: 10% !important;
+}
+.top-nav .nav-item a.nav-link{
+    font-size: 11px;
+    color: #666;
+}
+.img-disabled{
+    opacity: 0.5;
+}
+
+/*Drop Down Menu*/
+.dropdown-content{
+    min-width: 7rem !important;
+    font-size: 11px;
+}
+/*Drop Down Menu*/
+.mailboxlist-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    border: 1px solid #999;
+    background-color: #f9f9f9;
+}
+.boxtitle, .card-footer, .modal-header {
+    height: 27px !important;
+    padding: 3px 10px 4px 5px;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 11px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    background: url(../images/listheader.gif) top left repeat-x #CCC;
+}
+.mailboxlist-container .card-footer{
+    font-weight: normal;
+}
+.mailboxlist-container .card-footer input {
+    border: 1px solid #999;
+}
+.mailboxlist-container ul li a{
+    font-size: 14px;
+    color: #000;
+}
+.mailboxlist-container ul li a.active{
+    color: #FFF;
+    font-weight: bold;
+    background-color: #929292;
+}
+.boxtitle i{
+    font-size: 11px;
+}
+.mailboxlist-container .pagejumper{
+    width: 20px;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+    padding: 0px;
+}
+ul.message-list li a.active{
+    background: #CC3333;
+    font-weight: normal;
+}
+.message-body{
+    border: 1px solid #999;;
+}
+.message-body table tr td{
+    font-size: 13px;
+    border-bottom: 1px solid #fff;
+    border-top: 0px;
+}
+.message-body table tr td.header-title{
+    color: #929292;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.modal-body{
+    font-size: 11px;
+}
+.modal-body fieldset{
+    border: 1px solid #999;
+    min-height: 300px;
+}
+.modal-body fieldset legend{
+    font-size: 14px;
+}

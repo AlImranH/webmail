@@ -20,3 +20,9 @@ Route::get('/', function () {
 Route::get('/create-new-message', function (){
     return view('create-new-message');
 });
+Route::get('/drafts', function (){
+    return view('pages.drafts');
+});
+Route::get('/sent', function (){
+    return view('pages.sent');
+});

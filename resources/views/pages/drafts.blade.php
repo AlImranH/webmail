@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title', 'Home Page')
+@section('title', "Webmail :: Draft")
 @section('navbar')
     <nav class="navbar navbar-expand-lg navbar-light w-100 top-bottom-navbar m-0 p-0">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -129,10 +129,10 @@
                 <div class="card-body p-0">
                     <ul class="list-unstyled m-0 p-0">
                         <li>
-                            <a href="{{url('/')}}" class="text-decoration-none px-1 border-bottom d-block active"><img src="{{asset('assets/images/icons/inbox.png')}}" alt=""> Inbox</a>
+                            <a href="{{url('/')}}" class="text-decoration-none px-1 border-bottom d-block"><img src="{{asset('assets/images/icons/inbox.png')}}" alt=""> Inbox</a>
                         </li>
                         <li>
-                            <a href="{{url('/drafts')}}" class="text-decoration-none px-1 border-bottom d-block"><img src="{{asset('assets/images/icons/drafts.png')}}" alt=""> Drafts</a>
+                            <a href="{{url('/drafts')}}" class="text-decoration-none px-1 border-bottom d-block active"><img src="{{asset('assets/images/icons/drafts.png')}}" alt=""> Drafts</a>
                         </li>
                         <li>
                             <a href="{{url('/sent')}}" class="text-decoration-none px-1 border-bottom d-block"><img src="{{asset('assets/images/icons/send.png')}}" alt=""> Sent</a>
@@ -199,22 +199,22 @@
                         <li>
                             <a href="" class="d-flex justify-content-between text-decoration-none d-block px-2 border-bottom active">
                                 <div>
-                                    <small class="p-0 m-0">Asif Iqbal</small>
-                                    <p>Re: testing</p>
+                                    <small class="p-0 m-0">&nbsp;</small>
+                                    <p class="m-0 pb-1">(no subject)</p>
                                 </div>
                                 <div>
-                                    <small>2021-04-12 17:02</small>
+                                    <small class="text-secondary">Today 23:09</small>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="" class="d-flex justify-content-between text-decoration-none d-block px-2 border-bottom">
                                 <div>
-                                    <small class="p-0 m-0">Asif Iqbal</small>
-                                    <p>Re: testing</p>
+                                    <small class="p-0 m-0">&nbsp;</small>
+                                    <p class="m-0 pb-1">(no subject)</p>
                                 </div>
                                 <div>
-                                    <small>2021-04-12 17:01</small>
+                                    <small class="text-secondary">Today 23:09</small>
                                 </div>
                             </a>
                         </li>
@@ -260,19 +260,11 @@
                     <div class="table-responsive">
                         <table class="table p-0 m-0" style="background: #EBEBEB">
                             <tr class="m-0 p-0">
-                                <td class="text-right w-10 px-1 py-0 header-title">Subject</td>
-                                <td class="px-1 py-0">Re: testing</td>
-                            </tr>
-                            <tr class="m-0 p-0">
-                                <td class="text-right w-10 px-1 py-0 header-title">From</td>
+                                <td class="text-right w-auto px-1 py-0 header-title">From</td>
                                 <td class="px-1 py-0">Asif Iqbal <i class="fas fa-user-tie"></i></td>
                             </tr>
                             <tr class="m-0 p-0">
-                                <td class="text-right w-10 px-1 py-0 header-title">To</td>
-                                <td class="px-1 py-0"><a href="">tellpe@tellpe.com <i class="fas fa-user-tie"></i></a></td>
-                            </tr>
-                            <tr class="m-0 p-0">
-                                <td class="text-right w-10 px-1 py-0 header-title">Date</td>
+                                <td class="text-right w-auto px-1 py-0 header-title">Date</td>
                                 <td class="px-1 py-0">2021-04-12 17:02</td>
                             </tr>
                             <tr class="m-0 p-0">
@@ -282,20 +274,16 @@
                         </table>
                     </div>
                     <br>
-                    <div>hhhh</div>
-                    <div>On Mon, Apr 12, 2021 at 5:01 PM Asif Iqbal <<a href="" class="text-primary">asifiqbal1537@gmail.com</a>> wrote:</div>
-                    <blockquote class="border-left ml-1 px-2">
-                        <div class="py-2">hjbkjnkjnkj</div>
-                        <div>On Sun, Apr 11, 2021 at 5:33 PM <<a href="" class="text-primary">tellpe@tellpe.com</a>> wrote:</div>
-                        <blockquote class="border-left ml-1 px-2">
-                            <div class="py-2">hjbkjnkjnkj</div>
-                        </blockquote>
-                    </blockquote>
+                    --<br><br>
+                    BFIN GROUP PLC. <br><br>
+
+                    Reg. n° 12070052 <br><br>
+
+                    England & Wales <br><br>
+
+                    (HEAD OFFICE FINANCIAL MANAGEMENT) <br><br>
                 </div>
             </div>
         </div>
     </div>
-@endsection
-@section('components')
-    @include('includes.components.list-option')
 @endsection

@@ -5,7 +5,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" title="Back to message list"><img src="{{asset('public/assets/images/icons/back.png')}}" alt=""></a>
+                    <a class="nav-link" href="{{url('/')}}" title="Back to message list"><img src="{{asset('public/assets/images/icons/back.png')}}" alt=""></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('/create-new-message')}}" title="Send message"><img src="{{asset('public/assets/images/icons/send-message.png')}}" alt=""></a>
@@ -25,37 +25,37 @@
                     </a>
                     <div class="dropdown-menu dropdown-content open-dropdown-content m-0 p-0" id="dropdownContent" aria-labelledby="navbarDropdown" style="height: 400px; overflow: scroll">
                         <ul class="list-unstyled">
-                            <li class="d-flex align-items-center px-2">
-                                <a class="dropdown-item m-0 py-1 px-1" href="#">Afrikaans</a>
+                            <li class="d-flex align-items-center">
+                                <a class="dropdown-item m-0 py-1 px-1" href="#"><span class="pl-3">Afrikaans</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-1"><a href="#" class="dropdown-item m-0 py-1 px-2">Albanian</a>
+                            <li class="d-flex align-items-center"><a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Albanian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a class="dropdown-item m-0 py-1 px-1">Arabic</a>
+                            <li class="d-flex align-items-center">
+                                <a class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Arabic</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Armenian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Armenian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Basque</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Basque</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Bengali</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Bengali</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Bulgarian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Bulgarian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Catalan</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Catalan</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Cambodian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Cambodian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Chinese (Mandarin)</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Chinese (Mandarin)</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Croatian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Croatian</span></a>
                             </li>
                             <li class="d-flex align-items-center">
                                 <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Czech</span></a>
@@ -69,104 +69,104 @@
                             <li class="d-flex align-items-center">
                                 <a href="#" class="dropdown-item m-0 py-1 px-1"><i class="fas fa-check"></i> <span>English</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Estonian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Estonian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Fiji</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Fiji</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Finnish</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Finnish</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">French</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Finnish</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Georgian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Georgian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">German</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">German</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Greek</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Greek</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Gujarati</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Gujarati</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Hebrew</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Hebrew</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Hindi</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Hindi</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Hungarian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Hungarian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Icelandic</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Icelandic</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Indonesian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Indonesian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Irish</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Irish</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Italian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Italian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Japanese</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Japanese</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Javanese</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Javanese</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Korean</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Korean</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Latin</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Latin</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Latvian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Latvian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Lithuanian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Lithuanian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Macedonian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Macedonian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Malay</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Malay</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Malayalam</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Malayalam</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Maltese</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Maltese</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Maori</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Maori</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Marathi</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Marathi</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Mongolian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Mongolian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Nepali</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Nepali</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Norwegian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Norwegian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Persian</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Persian</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Polish</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Polish</span></a>
                             </li>
-                            <li class="d-flex align-items-center px-2">
-                                <a href="#" class="dropdown-item m-0 py-1 px-1">Punjabi</a>
+                            <li class="d-flex align-items-center">
+                                <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Punjabi</span></a>
                             </li>
                             <li class="d-flex align-items-center">
                                 <a href="#" class="dropdown-item m-0 py-1 px-1"><span class="pl-3">Quechua</span></a>

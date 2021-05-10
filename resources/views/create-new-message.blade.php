@@ -359,11 +359,30 @@
                         <td class="w-10 font-bold header-title">To</td>
                         <td>
                             <textarea name="" id="" rows="1" class="w-100"></textarea>
-                            <span class="text-danger cursor-pointer">Add Cc</span> | <span class="text-danger cursor-pointer">Add Bcc</span> | <span class="text-danger cursor-pointer">Add Replay-To</span> | <span class="text-danger cursor-pointer">Add Followup-To</span>
                         </td>
                     </tr>
+                    <tr class="d-none" id="ccRow">
+                        <td class="w-10 font-bold header-title"><span class="p-1 cursor-pointer" id="removeCc"><i class="far fa-minus-square"></i></span>Cc</td>
+                        <td><input type="text" class="w-100"></td>
+                    </tr>
+                    <tr class="d-none" id="bccRow">
+                        <td class="w-10 font-bold header-title"><span class="p-1 cursor-pointer" id="removeBcc"><i class="far fa-minus-square"></i></span>Bcc</td>
+                        <td><input type="text" class="w-100"></td>
+                    </tr>
+                    <tr class="d-none" id="replyRow">
+                        <td class="w-10 font-bold header-title"><span class="p-1 cursor-pointer" id="removeReply"><i class="far fa-minus-square"></i></span>Reply-To</td>
+                        <td><input type="text" class="w-100"></td>
+                    </tr>
+                    <tr class="d-none" id="followupRow">
+                        <td class="w-10 font-bold header-title"><span class="p-1 cursor-pointer" id="removeFollowup"><i class="far fa-minus-square"></i></span>Followup-To</td>
+                        <td><input type="text" class="w-100"></td>
+                    </tr>
                     <tr>
-                        <td style="w-10 font-bold header-title">Subject</td>
+                        <td></td>
+                        <td><span class="text-danger cursor-pointer border-right border-dark px-1" id="addCc">Add Cc</span>  <span class="text-danger cursor-pointer border-right border-dark px-1" id="addBcc"> Add Bcc</span> <span class="text-danger cursor-pointer border-right border-dark px-1" id="addReply">Add Replay-To</span>  <span class="text-danger cursor-pointer px-1" id="addFollowup">Add Followup-To</span></td>
+                    </tr>
+                    <tr>
+                        <td class="w-10 font-bold header-title">Subject</td>
                         <td><input type="text" class="w-100"></td>
                     </tr>
                 </table>
@@ -414,3 +433,6 @@ England & Wales
         </div>
     </div>
 @endsection
+@push('scripts')
+    <script src="{{asset('public/assets/js/create-new-message.js')}}"></script>
+@endpush

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light m-0 p-0">
     {{--            <div class="container-fluid">--}}
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{url('/')}}">
         <img src="{{asset('public/assets/images/logo.png')}}" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><img src="{{asset('public/assets/images/icons/contact.png')}}" alt=""> Contacts</a>
+                <a class="nav-link" href="{{url('/contacts')}}"><img src="{{asset('public/assets/images/icons/contact.png')}}" alt=""> Contacts</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><img src="{{asset('public/assets/images/icons/settings.png')}}" alt=""> Settings</a>

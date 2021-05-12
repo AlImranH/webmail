@@ -321,7 +321,6 @@
                 <div class="card-body p-0">
                     <ul class="list-unstyled m-0 p-0">
                         <li class="border-bottom">
-
                             <form action="">
                                 <div class="input-group m-1 p-0 search-box rounded-pill">
                                     <div class="input-group-prepend search-box">
@@ -352,7 +351,7 @@
                             <select name="" id="from">
                                 <option value="">tellpe@tellpe.com</option>
                             </select>
-                            <span ><a href="" class="text-danger text-decoration-none">Edit identities</a></span>
+                            <span ><a href="{{url('/identities')}}" class="text-danger text-decoration-none">Edit identities</a></span>
                         </td>
                     </tr>
                     <tr>

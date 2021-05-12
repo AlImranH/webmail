@@ -26,3 +26,19 @@ Route::get('/drafts', function (){
 Route::get('/sent', function (){
     return view('pages.sent');
 });
+Route::get('/identities', function (){
+    return view('pages.identities');
+});
+Route::get('/add-new-identity', function (){
+    return view('pages.add-new-identity');
+});
+Route::get('/identities/preference-mailbox-view', function (){
+    return view('pages.identities.preference.mailbox-view');
+});
+
+Route::get('/contacts', function (){
+    return view('pages.contacts');
+});
+Route::get('/edit-contact', function (){
+    return view('pages.edit-contact');
+});

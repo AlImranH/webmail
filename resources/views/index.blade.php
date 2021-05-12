@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg navbar-light w-100 top-bottom-navbar m-0 p-0">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#" title="Check for new message"><img src="{{asset('public/assets/images/icons/check-message.png')}}" alt=""></a>
                 </li>
                 <li class="nav-item">
@@ -170,7 +170,7 @@
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="w-75">
-                            <input type="text" class="rounded-pill text-center" value="0%">
+                            <input type="text" class="rounded-pill text-center" value="0%" style="font-size: 11px;">
                         </div>
 
                     </div>

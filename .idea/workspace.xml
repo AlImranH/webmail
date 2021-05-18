@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8324b7a-a8dc-4d63-99cc-41f2adfdcef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/js/edit-contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/myTestMail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/create-new-message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create-new-message.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/edit-contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/edit-contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="c8324b7a-a8dc-4d63-99cc-41f2adfdcef8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +195,7 @@
       <workItem from="1620844569188" duration="3194000" />
       <workItem from="1621136651974" duration="2901000" />
       <workItem from="1621211248553" duration="11676000" />
-      <workItem from="1621359390963" duration="2237000" />
+      <workItem from="1621359390963" duration="2942000" />
     </task>
     <servers />
   </component>

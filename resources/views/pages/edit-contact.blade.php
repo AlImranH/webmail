@@ -136,30 +136,54 @@
             <form action="">
                 <div class="card mailboxlist-container">
                     <div class="card-header boxtitle">Edit contact</div>
-                    <div class="card-body">
-                        <div class="row justify-content-between">
-                            <div>
+                    <div class="card-body overflow-auto">
+                        <div class="row justify-content-between mb-2">
+                            <div class="col-md-10">
                                 <div class="row mb-2">
-                                    <div class="col">
-                                        <input type="text" class="font-size-20 px-1" value="Asif" placeholder="First name">
+                                    <div class="col-md-2 d-none pr-1" id="prefix">
+                                        <input type="text" class="font-size-20 px-1 w-100" placeholder="Prefix">
                                     </div>
-                                    <div class="col">
-                                        <input type="text" class="font-size-20 px-1" value="Iqbal" placeholder="Last name">
+                                    <div class="col-md-3 pr-1">
+                                        <input type="text" class="font-size-20 px-1 w-100" value="Asif" placeholder="First name">
+                                    </div>
+                                    <div class="col-md-3 px-1 d-none" id="middlename">
+                                        <input type="text" class="font-size-20 px-1 w-100" placeholder="Middle Name">
+                                    </div>
+                                    <div class="col-md-3 px-1">
+                                        <input type="text" class="font-size-20 px-1 w-100" value="Iqbal" placeholder="Last name">
+                                    </div>
+                                    <div class="col-md-3 my-1 d-none" id="suffix">
+                                        <input type="text" class="font-size-20 px-1 w-100" placeholder="Suffix">
                                     </div>
                                 </div>
-                                <select name="" id="">
+                                <div class="d-none my-1" id="display_name">
+                                    <input type="text" class="w-50" placeholder="Display Name">
+                                </div>
+                                <div class="d-none my-1" id="nickname">
+                                    <input type="text" class="w-50" placeholder="Nick Name">
+                                </div>
+                                <div class="d-none my-1" id="organization">
+                                    <input type="text" class="w-50" placeholder="Organization">
+                                </div>
+                                <div class="d-none my-1" id="department">
+                                    <input type="text" class="w-50" placeholder="Department">
+                                </div>
+                                <div class="d-none my-1" id="jobtitle">
+                                    <input type="text" class="w-50" placeholder="Job Title">
+                                </div>
+                                <select name="" class="add-single-field" id="">
                                     <option value="">Add field...</option>
                                     <option value="prefix">Prefix</option>
                                     <option value="middlename">Middle Name</option>
                                     <option value="suffix">Suffix</option>
-                                    <option value="name">Display Name</option>
+                                    <option value="display_name">Display Name</option>
                                     <option value="nickname">Nickname</option>
                                     <option value="organization">Organization</option>
                                     <option value="department">Department</option>
                                     <option value="jobtitle">Job Title</option>
                                 </select>
                             </div>
-                            <div class="text-center">
+                            <div class="col-md-2 text-center">
                                 <img src="{{asset('public/assets/images/contactpic.png')}}" class="border" alt="Contact Picture"><br>
                                 <label for="upload-photo" class="custom-label pt-1 pb-0 px-2 border-0 text-danger m-0">Add</label>
                                 <input type="file" name="photo" id="upload-photo" style="width: 5px"/><br>
@@ -179,20 +203,20 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active border border-top-0 border-dark p-2" id="properties" role="tabpanel" aria-labelledby="properties-tab">
-                                <table class="w-100">
-                                    <tr>
+                                <table class="w-100 properties">
+                                    <tr id="emailRow">
                                         <td class="w-15 header-title"><small>Email</small><br>
-                                            <select name="" id="" class="border-0 w-100">
-                                                <option value="">Home</option>
-                                                <option value="">Work</option>
-                                                <option value="">Other</option>
+                                            <select name="subtype_email[]" id="subtype_email" class="border-0 w-100">{{-- Don't remove id attribute or don't change id --}}
+                                                <option value="home">Home</option>
+                                                <option value="work">Work</option>
+                                                <option value="other">Other</option>
                                             </select>
                                         </td>
-                                        <td><br><a href=""><input type="text" class="px-2" value="asifiqbal1537@gmail.com"></a></td>
+                                        <td><br><a href=""><input type="text" name="email[]" id="email" class="px-2" value="asifiqbal1537@gmail.com"></a></td>{{-- Don't remove id attribute or don't change id --}}
                                     </tr>
-                                    <tr>
+                                    <tr id="phoneRow">
                                         <td class="w-10 header-title"><small>Phone</small><br>
-                                            <select name="" id="" class="border-0 w-100">
+                                            <select name="subtype_phone[]" id="subtype_phone" class="border-0 w-100">
                                                 <option value="home" selected="selected">Home</option>
                                                 <option value="home2">Home 2</option>
                                                 <option value="work">Work</option>
@@ -207,27 +231,27 @@
                                                 <option value="assistant">Assistant</option>
                                             </select>
                                         </td>
-                                        <td><br><input type="text" class="px-2" value="01611773666"></td>
+                                        <td><br><input type="text" name="phone[]" id="phone" class="px-2" value="01611773666"></td>
                                     </tr>
-                                    <tr>
+                                    <tr id="addressRow">
                                         <td class="w-10 header-title"><small>Address</small><br>
-                                            <select name="" id="" class="border-0 w-100">
+                                            <select name="subtype_address[]" id="subtype_address" class="border-0 w-100">
                                                 <option value="">Home</option>
                                                 <option value="">Work</option>
                                                 <option value="">Other</option>
                                             </select>
                                         </td>
                                         <td><br>
-                                            <input type="text" class="px-2 my-1" placeholder="Street" value="Muktatagacha, Mymensingh, Dhaka"><br>
-                                            <input type="text" class="px-2 my-1" placeholder="City" value="Dhaka">
-                                            <input type="text" class="px-2 my-1 w-10" placeholder="ZIP Code" value="2210"><br>
-                                            <input type="text" class="px-2 my-1" placeholder="Country" value="Bangladesh">
-                                            <input type="text" class="px-2 my-1 w-15" placeholder="State/Province">
+                                            <input type="text" name="street[]" id="street" class="px-2 my-1" placeholder="Street" value="Muktatagacha, Mymensingh, Dhaka"><br>
+                                            <input type="text" name="city[]" id="city" class="px-2 my-1" placeholder="City" value="Dhaka">
+                                            <input type="text" name="zip_code[]" id="zip_code" class="px-2 my-1 w-10" placeholder="ZIP Code" value="2210"><br>
+                                            <input type="text" name="country[]" id="country" class="px-2 my-1" placeholder="Country" value="Bangladesh">
+                                            <input type="text" name="state[]" id="state" class="px-2 my-1 w-15" placeholder="State/Province">
                                             </td>
                                     </tr>
-                                    <tr>
+                                    <tr id="addFieldRow">
                                         <td>
-                                            <select name="" id="">
+                                            <select name="" class="add-field">
                                                 <option value="">Add field...</option>
                                                 <option value="email">Email</option>
                                                 <option value="phone">Phone</option>
@@ -257,9 +281,9 @@
                                             <input type="date" name="" id="" placeholder="Birthday" class="mt-3">
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr id="addFieldRow" class="addFieldRow">
                                         <td>
-                                            <select name="" id="" class="mt-3">
+                                            <select name="" id="" class="add-single-field mt-3">
                                                 <option value="">Add field...</option>
                                                 <option value="maidenname">Maiden Name</option>
                                                 <option value="anniversary">Anniversary</option>
@@ -308,3 +332,6 @@
         </div>
     </div>
 @endsection
+@push('scripts')
+    <script src="{{asset('public/assets/js/edit-contact.js')}}"></script>
+@endpush

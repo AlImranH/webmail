@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,18 @@ Route::get('/contacts', function (){
 });
 Route::get('/edit-contact', function (){
     return view('pages.edit-contact');
+});
+
+Route::post('send-mail', function (Request $request) {
+
+//    dd($request->all());
+    $details = [
+        'title' => 'Test Mail',
+        'subject' => $request->subject,
+        'body' => $request->message_body,
+    ];
+
+    \Mail::to($request->to)->send(new \App\Mail\MyTestMail($details));
+
+    dd("Email is Sent.");
 });

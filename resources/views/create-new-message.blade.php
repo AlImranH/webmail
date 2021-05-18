@@ -343,13 +343,14 @@
             </div>
         </div>
         <div class="col-md-10">
-            <form action="">
+            <form action="{{url('/send-mail')}}" method="post">
+                @csrf
                 <table class="w-100">
                     <tr>
                         <td class="w-10 font-bold header-title">From</td>
                         <td>
-                            <select name="" id="from">
-                                <option value="">tellpe@tellpe.com</option>
+                            <select name="from" id="from">
+                                <option value="tellpe@tellpe.com">tellpe@tellpe.com</option>
                             </select>
                             <span ><a href="{{url('/identities')}}" class="text-danger text-decoration-none">Edit identities</a></span>
                         </td>
@@ -357,7 +358,7 @@
                     <tr>
                         <td class="w-10 font-bold header-title">To</td>
                         <td>
-                            <textarea name="" id="" rows="1" class="w-100"></textarea>
+                            <textarea name="to" id="" rows="1" class="w-100"></textarea>
                         </td>
                     </tr>
                     <tr class="d-none" id="ccRow">
@@ -382,14 +383,14 @@
                     </tr>
                     <tr>
                         <td class="w-10 font-bold header-title">Subject</td>
-                        <td><input type="text" class="w-100"></td>
+                        <td><input name="subject" type="text" class="w-100"></td>
                     </tr>
                 </table>
 
                 <div class="row mt-1" style="height:100%">
                     <div class="col-md-10">
                         <div class="card" style="height: 65vh">
-                            <textarea name="" id="" cols="30" rows="10" class="w-100 border-0 message-box" style="">
+                            <textarea name="message_body" id="" cols="30" rows="10" class="w-100 border-0 message-box" style="">
 
 --
 BFIN GROUP PLC.
